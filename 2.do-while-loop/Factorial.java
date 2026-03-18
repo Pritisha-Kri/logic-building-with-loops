@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
-class MultiplicationTable {
+class Factorial {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number: ");
         int n = sc.nextInt();
 
-        int i = 1;
+        int fact = 1, i = 1;
         do {
-            System.out.println(n + " * " + i + " = " + (n * i));
+            fact *= i;
             i++;
-        } while (i <= 10);
+        } while (i <= n);
 
-        sc.close();
+        System.out.println("Factorial = " + fact);
     }
 }
