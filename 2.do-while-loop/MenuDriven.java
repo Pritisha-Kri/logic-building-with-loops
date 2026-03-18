@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+//Create a menu-driven program that allows the user to choose and perform different operations.
+
+
 class MenuDriven {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -17,5 +20,7 @@ class MenuDriven {
             }
 
         } while (choice != 2);
+
+        sc.close();
     }
 }
